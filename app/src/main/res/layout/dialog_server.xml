@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewServerUrl"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Server Address" android:textColor="@color/text"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please specify server address here. No operation is possible/allowed for incorrect or null server address." />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editTextServerUrl"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+        android:textSize="20dp"
+        android:hint="Server IP/URL" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
